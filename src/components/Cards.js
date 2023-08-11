@@ -11,7 +11,7 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='images/img-9.jpg'
-              text='Desfrute em nosso hotel próximo ao vibrante Parque do Sabiá e ao emocionante Estádio de Uberlândia. 1KM
+              text='Desfrute em nosso hotel próximo ao vibrante Parque do Sabiá e ao emocionante Estádio de Uberlândia.
                             '
               label='Adventure'
               path='/services'
@@ -26,19 +26,19 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='images/img-3.jpg'
-              text='Academias próximas mantendo a persistência e saúde junto aonde estiver'
+              text='Academias próximas mantenha a persistência e saúde juntos aonde estiver'
               label='Mystery'
               path='/services'
             />
             <CardItem
               src='images/img-4.jpg'
-              text='Universidade Federal de Uberlândia (UFU) próximo do hotel.'
+              text='Universidade Federal de Uberlândia (UFU) próximo.'
               label='Adventure'
               path='/products'
             />
             <CardItem
               src='images/img-8.jpg'
-              text='Deliciosos pratos tipicos da região ao redor'
+              text='Deliciosos pratos tipicos mineiros na sua comodidade'
               label='Adrenaline'
               path='/sign-up'
             />
