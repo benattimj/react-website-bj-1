@@ -5,19 +5,20 @@ import CardItem from './CardItem';
 function Cards() {
   return (
     <div className='cards'>
-      <h1>Check out these EPIC Destinations!</h1>
+      <h1>Veja agora destinos incríveis durante sua estádia</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
               src='images/img-9.jpg'
-              text='Explore the hidden waterfall deep inside the Amazon Jungle'
+              text='Desfrute em nosso hotel próximo ao vibrante Parque do Sabiá e ao emocionante Estádio de Uberlândia. 1KM
+                            '
               label='Adventure'
               path='/services'
             />
             <CardItem
               src='images/img-2.jpg'
-              text='Travel through the Islands of Bali in a Private Cruise'
+              text='Um dos maiores e mais completos Shopping da região. Com cinema e restaurantes renomados. EM FRENTE'
               label='Luxury'
               path='/services'
             />
@@ -25,7 +26,7 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='images/img-3.jpg'
-              text='Set Sail in the Atlantic Ocean visiting Uncharted Waters'
+              text='Academias próximas mantendo a persistência e saúde junto aonde estiver'
               label='Mystery'
               path='/services'
             />
