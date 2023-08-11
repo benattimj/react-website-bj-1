@@ -32,13 +32,13 @@ function Cards() {
             />
             <CardItem
               src='images/img-4.jpg'
-              text='Experience Football on Top of the Himilayan Mountains'
+              text='Universidade Federal de Uberlândia (UFU) próximo do hotel.'
               label='Adventure'
               path='/products'
             />
             <CardItem
               src='images/img-8.jpg'
-              text='Ride through the Sahara Desert on a guided camel tour'
+              text='Deliciosos pratos tipicos da região ao redor'
               label='Adrenaline'
               path='/sign-up'
             />
