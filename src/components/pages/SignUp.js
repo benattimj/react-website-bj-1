@@ -3,7 +3,7 @@ import './SignUp.css'; // Importe seu arquivo de estilo personalizado (opcional)
 
 export default function SignUpForm() {
   return (
-    <div className="container">
+    <div className="containerx">
       <div className="card">
         <div className="card-image">
           <h2 className="card-heading">
