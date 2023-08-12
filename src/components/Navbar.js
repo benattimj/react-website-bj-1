@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -54,9 +56,37 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Contato
+                Produto
               </Link>
             </li>
+
+            <li className='nav-item'>
+              <Link
+                to='/Sobre'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Sobre
+              </Link>
+            </li>
+            
+            
+            <li className='nav-item'>
+  <Link to='/login' className='nav-links-mobile' onClick={closeMobileMenu}>
+    <FontAwesomeIcon icon={faUser} />
+    Login
+  </Link>+
+
+
+  
+</li>
+<li className='nav-item'>
+  <button className='nav-button' onClick={closeMobileMenu}>
+    <FontAwesomeIcon icon={faUser} />
+    Login
+  </button>
+</li>
+
 
             <li>
               <Link

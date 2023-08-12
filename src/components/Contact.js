@@ -33,14 +33,28 @@ const Contact = () => {
   </div>
 
 <form action="">
-<input type="text" name='name' placeholder='Your Full name' required/>
-<input type="email" name='email' placeholder='Your Email' required/>
-<textarea name="message" rows="7" placeholder='Your Message' required/>
-<button type='submit' className='btn btn-primary'>Send Message</button>
+          <div className="contact_option">
+            <h4>Full Name</h4>
+            <input type="text" name='name' placeholder='Your Full Name' required />
+          </div>
+
+          <div className="contact_option">
+            <h4>Your Email</h4>
+            <input type="email" name='email' placeholder='Your Email' required />
+          </div>
+
+          <div className="contact_option">
+            <h4>Your Message</h4>
+            <textarea name="message" rows="7" placeholder='Your Message' required />
+          </div>
+
+          <div className="contact_option">
+            <button type='submit' className='btn btn-primary'>Send Message</button>
+          </div>
         </form>
       </div>
     </section>
-  )
+  );
 }
 
 export default Contact

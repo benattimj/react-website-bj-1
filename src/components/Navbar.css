@@ -35,7 +35,7 @@
   }
   
   .nav-menu {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
     list-style: none;
@@ -155,4 +155,18 @@
       color: #242424;
       transition: 250ms;
     }
+  }
+  
+  .nav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: #193757;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
