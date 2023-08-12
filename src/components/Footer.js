@@ -8,10 +8,10 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join the BJ System to receive our best vacation deals
-        </p>
+          Se inscreva para as melhores ofertas e top 10 hit da cidade.
+                  </p>
         <p className='footer-subscription-text'>
-          You can unsubscribe at any time.
+          Se inscreva a qualquer momento.
         </p>
         <div className='input-areas'>
           <form>
@@ -68,7 +68,7 @@ function Footer() {
               <i class='fab fa-typo3' />
             </Link>
           </div>
-          <small class='website-rights'>BJSYS © 2020</small>
+          <small class='website-rights'>BJSYS © 2023</small>
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
