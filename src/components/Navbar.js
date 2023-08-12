@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fontawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 function Navbar() {
