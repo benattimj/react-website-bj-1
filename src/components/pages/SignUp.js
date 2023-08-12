@@ -40,7 +40,7 @@ export default function SignUpForm() {
             <label className="input-label">Password</label>
           </div>
           <div className="action">
-            <button className="action-button">Entrar</button>
+            <button className="action-button">Entrarr</button>
           </div>
         </form>
         <div className="card-info">
