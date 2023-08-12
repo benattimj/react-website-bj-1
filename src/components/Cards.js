@@ -1,6 +1,8 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
+import { Card, Modal, Button } from 'react-bootstrap';
+
 
 function Cards() {
   return (

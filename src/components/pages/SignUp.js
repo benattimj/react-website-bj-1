@@ -3,13 +3,13 @@ import './SignUp.css'; // Importe seu arquivo de estilo personalizado (opcional)
 
 export default function SignUpForm() {
   return (
-    <div className="containerx">
+    <div className="container">
       <div className="card">
         <div className="card-image">
           <h2 className="card-heading">
-            Cadastre Agora 
-        <br/>
-            <small>Vamos criar sua conta</small>
+            Login
+            <br/>
+            <small>Acesse sua conta</small>
           </h2>
         </div>
         <form className="card-form">
@@ -17,7 +17,7 @@ export default function SignUpForm() {
             <input
               type="text"
               className="input-field"
-              defaultValue="Seu Usuario"
+              defaultValue="Seu usuario"
               required
             />
             <label className="input-label">Usuario</label>
@@ -26,7 +26,7 @@ export default function SignUpForm() {
             <input
               type="text"
               className="input-field"
-              defaultValue="Seuemail@gmail.com"
+              defaultValue="@gmail.com"
               required
             />
             <label className="input-label">Email</label>
@@ -37,10 +37,10 @@ export default function SignUpForm() {
               className="input-field"
               required
             />
-            <label className="input-label">Senha</label>
+            <label className="input-label">Password</label>
           </div>
           <div className="action">
-            <button className="action-button">Cadastrar</button>
+            <button className="action-button">Entrar</button>
           </div>
         </form>
         <div className="card-info">

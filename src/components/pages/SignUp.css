@@ -2,6 +2,18 @@
 
 
 
+img {
+	max-width: 100%;
+	display: block;
+}
+
+
+// iOS Reset 
+input {
+	appearance: none;
+	border-radius: 0;
+}
+
 .card {
 	margin: 2rem auto;
 	display: flex;
@@ -111,5 +123,7 @@
 		text-decoration: none;
 	}
 }
+
+
 
 
