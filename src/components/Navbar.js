@@ -8,20 +8,20 @@ function Navbar() {
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-g
+
   const showButton = () => {
-   if (window.innerWidth <= 960) {
-     setButton(false);
-   } else {
-     setButton(true);
-   }
- };
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+  };
 
- useEffect(() => {
-   showButton();
- }, []);
+  useEffect(() => {
+    showButton();
+  }, []);
 
- window.addEventListener('resize', showButton);
+  window.addEventListener('resize', showButton);
   return (
     <>
       <nav className='navbar'>
@@ -67,24 +67,20 @@ g
                 Sobre
               </Link>
             </li>
-            
-            
-            <li className='nav-item'>
-  <Link to='/login' className='nav-links-mobile' onClick={closeMobileMenu}>
-    <FontAwesomeIcon icon={faUser} />
-    Login
-  </Link>
+
+            <li>
+
+              <Link
+                to='/sign-up'  // Define o destino do link
+                className='nav-links-3'  // Classe CSS para estilização (se você estiver usando estilos externos)
+                onClick={closeMobileMenu}  // Função a ser executada quando o link for clicado
+              >
+                Login  {/* Texto do link/botão */}
+              </Link>
 
 
-  
-</li>
-<li className='nav-item'>
-  <button className='nav-button' onClick={closeMobileMenu}>
-    <FontAwesomeIcon icon={faUser} />
-    Login
-  </button>
-</li>
 
+            </li>
 
             <li>
               <Link
