@@ -25,13 +25,6 @@
     padding: 1rem;
     max-width: 300px;
     text-align: left;
-    position:
+
   }
   
-  .chat-box {
-    /* Estilo do chat-box quando fechado */
-  }
-  
-  .chat-box.open {
-    /* Estilo do chat-box quando aberto */
-  }
