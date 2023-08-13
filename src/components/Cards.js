@@ -31,7 +31,7 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='images/img-3.jpg'
-              text='Academias próximas mantenha a persistência e saúde juntos aonde estiver'
+              text='Academias próximas, utilize seu GYMPASS e mantenha sua disciplina mesmo em viagens.'
               label='Mystery'
               path='/services'
             />
@@ -43,7 +43,13 @@ function Cards() {
             />
             <CardItem
               src='images/img-8.jpg'
-              text='Deliciosos pratos tipicos mineiros na sua comodidade'
+              text='Deliciosos pratos tipicos mineiros direto das melhores cozinhas da região.'
+              label='Adrenaline'
+              path='/sign-up'
+            />
+            <CardItem
+              src='images/img-10.jpg'
+              text='Vertical Escalada / Localização com ótimas musicas e uma boa aventura'
               label='Adrenaline'
               path='/sign-up'
             />

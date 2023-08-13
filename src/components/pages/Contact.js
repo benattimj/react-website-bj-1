@@ -28,7 +28,7 @@ const Contact = () => {
 <article className="contact_option">
     <h4>WhatsApp</h4>
     <h5>Murilo Contact</h5>
-    <a href="https://api.whatsapp.com/send/?phone=5534999047919&text&type=phone_number&app_absent=0" classname='btn btn-prymary'> Send a message</a>
+    <a href="https://api.whatsapp.com/send/?phone=5534999047919&text&type=phone_number&app_absent=0" classname='btn btn-prymary'> Envie uma mensagem</a>
     </article>
   </div>
 
