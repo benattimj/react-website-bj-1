@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import LoginModal from './LoginModal';
@@ -6,10 +6,12 @@ import LoginModal from './LoginModal';
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
+  const [isLoginModalOpen, setLoginModalOpen] = useState(false);
+
+  const modalRef = useRef();
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-  const [isLoginModalOpen, setLoginModalOpen] = useState(false);
 
   const openLoginModal = () => {
     setLoginModalOpen(true);
@@ -30,6 +32,24 @@ function Navbar() {
   useEffect(() => {
     showButton();
   }, []);
+
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      if (modalRef.current && !modalRef.current.contains(event.target)) {
+        closeLoginModal();
+      }
+    };
+
+    if (isLoginModalOpen) {
+      document.addEventListener('click', handleOutsideClick);
+    } else {
+      document.removeEventListener('click', handleOutsideClick);
+    }
+
+    return () => {
+      document.removeEventListener('click', handleOutsideClick);
+    };
+  }, [isLoginModalOpen]);
 
   window.addEventListener('resize', showButton);
   return (
