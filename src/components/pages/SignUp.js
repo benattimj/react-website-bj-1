@@ -17,8 +17,7 @@ export default function SignUpForm() {
             <input
               type="text"
               className="input-field"
-              defaultValue="Seu usuario"
-              required
+                       required
             />
             <label className="input-label">Usuario</label>
           </div>
@@ -26,7 +25,6 @@ export default function SignUpForm() {
             <input
               type="text"
               className="input-field"
-              defaultValue="@gmail.com"
               required
             />
             <label className="input-label">Email</label>
