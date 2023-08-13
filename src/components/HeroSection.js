@@ -18,7 +18,7 @@ function HeroSection() {
                     buttonStyle='btn--outline'
                     buttonSize='btn--large'
                 >
-                    GET STARTED
+                    INCIE AGORA
                 </Button>
                 <Button
                     className='btns'
@@ -26,7 +26,7 @@ function HeroSection() {
                     buttonSize='btn--large'
                     onClick={console.log('hey')}
                 >
-                    ASSISTA O TRAILER <i className='far fa-play-circle' />
+                    Certificação Hotel Managements <i className='far fa-play-circle' />
                 </Button>
 
 

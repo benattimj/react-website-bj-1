@@ -17,6 +17,11 @@ function Navbar() {
     setLoginModalOpen(true);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
+
   const closeLoginModal = () => {
     setLoginModalOpen(false);
   };
@@ -37,6 +42,7 @@ function Navbar() {
     const handleOutsideClick = (event) => {
       if (modalRef.current && !modalRef.current.contains(event.target)) {
         closeLoginModal();
+        window.scrollTo(0, 0);
       }
     };
 
