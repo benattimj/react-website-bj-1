@@ -105,17 +105,19 @@ function Navbar() {
               </Link>
             </li>
 
-  
 
 
             <li className='nav-item'>
-            <button onClick={openLoginModal} className='align-right'>
-              Login</button>
-              <LoginModal
-                isOpen={isLoginModalOpen}
-                onRequestClose={closeLoginModal}
-              />
-            </li>
+            <button onClick={() => openLoginModal()} className='align-right'>
+              Login
+            </button>
+            <LoginModal
+              isOpen={isLoginModalOpen}
+              onRequestClose={closeLoginModal}
+            />
+
+            
+</li>
 
             <li>
               <Link
