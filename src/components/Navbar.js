@@ -82,8 +82,7 @@ function Navbar() {
   
 
 
-            <li className='nav-itemc'>
-                   
+            <li className='nav-item'>
             <button onClick={openLoginModal} className='align-right'>
               Login</button>
               <LoginModal
