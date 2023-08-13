@@ -46,6 +46,49 @@ body {
   font-weight: bold;
 }
 
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: px;
+  flex-wrap: wrap; /* Permite que os botões quebrem para a próxima linha se necessário */
+}
+
+.modal-footer button {
+  margin: 3px;
+}
+
+
+/* Estilo para o botão "Entrar" */
+.btn-primary {
+  background-color: #007bff; /* Cor de fundo azul do botão "Entrar" */
+  color: #fff; /* Cor do texto branco */
+  border: none; /* Remove a borda */
+  border-radius: 4px; /* Arredonda as bordas */
+  padding: 8px 16px; /* Espaçamento interno */
+  cursor: pointer;
+}
+
+/* Estilo para o botão "Cadastrar" */
+.btn-cadastrar {
+  background-color: #28a745; /* Cor de fundo verde do botão "Cadastrar" */
+  color: #fff; /* Cor do texto branco */
+  border: none; /* Remove a borda */
+  border-radius: 4px; /* Arredonda as bordas */
+  padding: 8px 16px; /* Espaçamento interno */
+  cursor: pointer;
+}
+
+/* Estilo para o botão "Fechar" */
+.btn-secondary {
+  background-color: #6c757d; /* Cor de fundo cinza do botão "Fechar" */
+  color: #fff; /* Cor do texto branco */
+  border: none; /* Remove a borda */
+  border-radius: 4px; /* Arredonda as bordas */
+  padding: 8px 16px; /* Espaçamento interno */
+  cursor: pointer;
+}
+
 .close:hover,
 .close:focus {
   color: black;
