@@ -21,14 +21,7 @@ export default function SignUpForm() {
             />
             <label className="input-label">Usuario</label>
           </div>
-          <div className="input">
-            <input
-              type="text"
-              className="input-field"
-              required
-            />
-            <label className="input-label">Email</label>
-          </div>
+          
           <div className="input">
             <input
               type="password"
@@ -38,7 +31,12 @@ export default function SignUpForm() {
             <label className="input-label">Password</label>
           </div>
           <div className="action">
-            <button className="action-button">Entrarr</button>
+            <button className="action-button">Entrar</button>
+          </div>
+
+          
+          <div className="action">
+            <button className="action-button">Cadastrar</button>
           </div>
         </form>
         <div className="card-info">

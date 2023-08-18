@@ -1,30 +1,20 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import LoginModal from './LoginModal';
 
 function Navbar() {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
-  const [isLoginModalOpen, setLoginModalOpen] = useState(false);
-
   const modalRef = useRef();
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
-  const openLoginModal = () => {
-    setLoginModalOpen(true);
-  };
 
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
 
-
-  const closeLoginModal = () => {
-    setLoginModalOpen(false);
-  };
 
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -38,24 +28,7 @@ function Navbar() {
     showButton();
   }, []);
 
-  useEffect(() => {
-    const handleOutsideClick = (event) => {
-      if (modalRef.current && !modalRef.current.contains(event.target)) {
-        closeLoginModal();
-        window.scrollTo(0, 0);
-      }
-    };
-
-    if (isLoginModalOpen) {
-      document.addEventListener('click', handleOutsideClick);
-    } else {
-      document.removeEventListener('click', handleOutsideClick);
-    }
-
-    return () => {
-      document.removeEventListener('click', handleOutsideClick);
-    };
-  }, [isLoginModalOpen]);
+ 
 
   window.addEventListener('resize', showButton);
   return (
@@ -107,25 +80,15 @@ function Navbar() {
 
 
 
-            <li className='nav-item'>
-            <button onClick={() => openLoginModal()} className='align-right'>
-              Login
-            </button>
-            <LoginModal
-              isOpen={isLoginModalOpen}
-              onRequestClose={closeLoginModal}
-            />
+ 
 
-            
-</li>
-
-            <li>
+            <li className='nav-item-mobile'>
               <Link
                 to='/sign-up'
-                className='nav-links-mobile'
+                className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Sign Up
+                Acessar
               </Link>
             </li>
           </ul>
